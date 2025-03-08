@@ -11,6 +11,8 @@ const PORT = process.env.PORT || 5000;
 //     res.status(200).json({message : "get all contacts here"});
 // })
 
+app.use(express.json());
+
 //base url
 app.use("/api/contact", require("./routes/contactRoutes"));
 
