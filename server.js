@@ -20,6 +20,7 @@ app.use(express.json());
 
 //base url
 app.use("/api/contact", require("./routes/contactRoutes"));
+app.use("/api/users", require("./routes/userRoutes"));
 
 app.use(errorHandler);
 
